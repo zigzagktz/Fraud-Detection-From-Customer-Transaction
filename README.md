@@ -75,7 +75,7 @@ Why do we need this?
 - False Positive Rate: False Positive / (False Positive + True Negative) 
 - True Positive Rate: True Positive / (True Positive + False Negative)
 
-The desired value of ROC curve is when it reach top left corner of the graph. Meaning XGB outperforms both logistic and randomforest
+The desired value of ROC curve is when it reach top left corner of the graph. For example: XGBoost
 
 
 
