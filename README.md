@@ -56,8 +56,9 @@ Logistic Regression                      | RandomForest                         
 
 Why do we need this?
 > Because simple classification can only consider one therashold for classifying two classes. For example less than 50% class 1 and more than 50% class 2. However, ROC gives proper understanding of overall distribution of class probability. 
-> False Positive Rate: False Positive / (False Positive + True Negative) 
-> True Positive Rate: True Positive / (True Positive + False Negative)
+
+- False Positive Rate: False Positive / (False Positive + True Negative) 
+- True Positive Rate: True Positive / (True Positive + False Negative)
 
 The desired value of ROC curve is when it reach top left corner of the graph. Meaning XGB outperforms both logistic and randomforest
 
@@ -70,6 +71,7 @@ Logistic Regression                      | RandomForest                         
 :---------------------------------------:|:--------------------------------------------:|:---------------------------------------------:
 ![logistic report](https://user-images.githubusercontent.com/32847030/65394296-ed070980-dd59-11e9-9656-8533a1565c04.JPG) | ![rm report](https://user-images.githubusercontent.com/32847030/65394297-ed9fa000-dd59-11e9-8dc7-d149ab64d3fd.JPG) | ![xg report](https://user-images.githubusercontent.com/32847030/65394298-ed9fa000-dd59-11e9-8437-09d02ed47b0c.JPG)
 
+If we look at weighted F1 scores we can see that Randomforest is giving better solution than logistic regression. But, XGB is outperforming both of them in every comparision metric.
 
 
 
@@ -77,3 +79,8 @@ Logistic Regression                      | RandomForest                         
 
 
 ## Final Prediction
+
+Final prediction is saved into a cvs file with probability associated with each transaction of being fraudalent. Only two fields are shown below, the transaction ID and probability to give clearity in result
+
+![final](https://user-images.githubusercontent.com/32847030/65394857-9e10a280-dd60-11e9-9113-67e7ce1ae40b.JPG)
+
