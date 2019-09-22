@@ -73,8 +73,8 @@ Logistic Regression                      | RandomForest                         
 
 Very important distinction here is that even though randomforest have better accuracy than logistic regression, but it is performing poorly on detecting frauds which is evident by low precision value of 1.
 
-Randomforest is better at defining what transactions are not fraudalent (poor precision for class 1)
-Logistic regression is better at defining what transaction are fraudalent (better precision for class 1)
+- Randomforest is better at defining what transactions are not fraudalent (poor precision for class 1)
+- Logistic regression is better at defining what transaction are fraudalent (better precision for class 1)
 
 
 ## Final Prediction
