@@ -33,11 +33,12 @@ Converted the categorical variables into numeric using on hot encoding. In logis
 Due to the size of dataset and limited computation power, the parameter tuining for XGBoost model is done manually based on calculated guesses and community sggestions. With more computation power the parameter tuning can be done automatically.   
 
 ## Results Interpretation
-                                                 **Confusion Matrix and Accuracy**
+**Confusion Matrix and Accuracy**
 
 Logistic Regression                      | RandomForest                                 | XGBoost
 :---------------------------------------:|:--------------------------------------------:|:---------------------------------------------:
 ![logistic con_mat](https://user-images.githubusercontent.com/32847030/65389708-178b9f00-dd27-11e9-99e0-c2a53e9e19d8.JPG) | ![rm con_mat](https://user-images.githubusercontent.com/32847030/65389709-178b9f00-dd27-11e9-8ec4-5fb253580e76.JPG) | ![xg con_mat](https://user-images.githubusercontent.com/32847030/65389710-178b9f00-dd27-11e9-88fd-35031da5c26e.JPG)
+71% | 74% | 90.35%
                                      
 
 
