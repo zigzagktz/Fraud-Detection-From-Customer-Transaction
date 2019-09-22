@@ -3,13 +3,13 @@ Python, Scikit-learn, Machine Learning
 
 ## Problem Statement and challenges
 - This is a Fraud Detection algorithm which predicts the probability of online transactions being fraudalent and non-fraudalent.
-- The class is highly unbalanced. Approximately 3% fraudalent and 97% non-fraudalent customer transactions.
+- In training data class is highly unbalanced. Approximately 3% fraudalent and 97% non-fraudalent customer transactions.
 - Dataset have many missing values. However, they cannot be removed because it's a sign of outliers which lead to anomily detection.
 - Classical methods may not give good result, thus, ensemble method needs to be implemented to minimize the error. (Proof given below). 
 
 ## Introduction
 - In this model no specific criteria has been set to classify fraudalent and non-fraudalent transactions but rather ROC curves are used to evaluate the performance.
-- Model is built while keeping in mind the customer satisfaction (false positive) as well as cost of fraudalent transaction (false negative). Thus, pricision and recall are almost equally balanced.
+- Model is built while keeping in mind the customer satisfaction (false positive) as well as cost of fraudalent transaction (false negative). Thus, we care about better values of precision and recall.
 - Model is built on data collected by IEEE Computational Intelligence Society. Consisting of approximately 600k customer transaction in training set and 500k transactions on testing set. 394 attributes are there in dataset. 
 - The algorithm can be integrated in retail transaction architecture to give real-time alarms.
   
@@ -55,7 +55,7 @@ Logistic Regression                      | RandomForest                         
 ![logistic ROC](https://user-images.githubusercontent.com/32847030/65394172-32c2d280-dd58-11e9-91b6-efea6251ff5b.JPG) | ![rm roc](https://user-images.githubusercontent.com/32847030/65394173-32c2d280-dd58-11e9-8cb0-a374add9b837.JPG) | ![xg roc](https://user-images.githubusercontent.com/32847030/65394260-4ae72180-dd59-11e9-9fd9-8b352924e132.JPG)
 
 Why do we need this?
-> Because simple classification can only consider one therashold for classifying two classes. For example less than 50% class 1 and more than 50% class 2. However, ROC gives proper understanding of overall distribution of class probability. 
+> Because simple classification can only consider one therashold for classifying two classes. For example less than 50% class 0 and more than 50% class 1. However, ROC gives proper understanding of overall distribution of class probability. 
 
 - False Positive Rate: False Positive / (False Positive + True Negative) 
 - True Positive Rate: True Positive / (True Positive + False Negative)
@@ -71,11 +71,10 @@ Logistic Regression                      | RandomForest                         
 :---------------------------------------:|:--------------------------------------------:|:---------------------------------------------:
 ![logistic report](https://user-images.githubusercontent.com/32847030/65394296-ed070980-dd59-11e9-9656-8533a1565c04.JPG) | ![rm report](https://user-images.githubusercontent.com/32847030/65394297-ed9fa000-dd59-11e9-8dc7-d149ab64d3fd.JPG) | ![xg report](https://user-images.githubusercontent.com/32847030/65394298-ed9fa000-dd59-11e9-8437-09d02ed47b0c.JPG)
 
-If we look at weighted F1 scores we can see that Randomforest is giving better solution than logistic regression. But, XGB is outperforming both of them in every comparision metric.
+Very important distinction here is that even though randomforest have better accuracy than logistic regression, but it is performing poorly on detecting frauds which is evident by low precision value of 1.
 
-
-
-
+Randomforest is better at defining what transactions are not fraudalent (poor precision for class 1)
+Logistic regression is better at defining what transaction are fraudalent (better precision for class 1)
 
 
 ## Final Prediction
