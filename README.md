@@ -41,7 +41,8 @@ Logistic Regression                      | RandomForest                         
 70.42% | 74.7% | 90.19%
                          
                          
-**Area Under the Curve with ROC curve**                         
+**Area Under the Curve with ROC curve**       
+
 Logistic Regression                      | RandomForest                                 | XGBoost
 :---------------------------------------:|:--------------------------------------------:|:---------------------------------------------:
 ![logistic ROC](https://user-images.githubusercontent.com/32847030/65394172-32c2d280-dd58-11e9-91b6-efea6251ff5b.JPG) | ![rm roc](https://user-images.githubusercontent.com/32847030/65394173-32c2d280-dd58-11e9-8cb0-a374add9b837.JPG) | ![xg roc](https://user-images.githubusercontent.com/32847030/65394260-4ae72180-dd59-11e9-9fd9-8b352924e132.JPG)
