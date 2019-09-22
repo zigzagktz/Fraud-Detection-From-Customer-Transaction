@@ -39,7 +39,9 @@ Logistic Regression                      | RandomForest                         
 :---------------------------------------:|:--------------------------------------------:|:---------------------------------------------:
 ![logistic con_mat](https://user-images.githubusercontent.com/32847030/65394133-b92ae480-dd57-11e9-9faf-459f19a4b439.JPG) | ![rm con_mat](https://user-images.githubusercontent.com/32847030/65394134-b92ae480-dd57-11e9-9127-724b1eda8159.JPG) | ![xg con_mat](https://user-images.githubusercontent.com/32847030/65394255-402c8c80-dd59-11e9-9cbc-7a288cfd04fc.JPG)
 70.42% | 74.7% | 90.19%
-                                     
+                         
+                         
+**Area Under the Curve with ROC curve**                         
 Logistic Regression                      | RandomForest                                 | XGBoost
 :---------------------------------------:|:--------------------------------------------:|:---------------------------------------------:
 ![logistic ROC](https://user-images.githubusercontent.com/32847030/65394172-32c2d280-dd58-11e9-91b6-efea6251ff5b.JPG) | ![rm roc](https://user-images.githubusercontent.com/32847030/65394173-32c2d280-dd58-11e9-8cb0-a374add9b837.JPG) | ![xg roc](https://user-images.githubusercontent.com/32847030/65394260-4ae72180-dd59-11e9-9fd9-8b352924e132.JPG)
