@@ -25,8 +25,10 @@ Built a fraud detectiong model trained on 591k customer transactions
 
 **Down Sampling**
 Down sampled the majority class to match with number of instances of minority class in order for model not to generalize towards majority class (non-fraudalent).
+
 **Feature selection and transformation**
 Converted the categorical variables into numeric using on hot encoding. In logistic regression l1 regularization is used for feature selection, random forest uses bootstraping to select subset of variables at a time and XGBoost minimizes error iteratively to build a strong classifier based on weak classifier. 
+
 **Parameter Tuining**
 Due to the size of dataset and limited computation power, the parameter tuining for XGBoost model is done manually based on calculated guesses and community sggestions. With more computation power the parameter tuning can be done automatically.   
 
