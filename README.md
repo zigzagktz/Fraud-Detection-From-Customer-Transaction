@@ -47,6 +47,12 @@ Logistic Regression                      | RandomForest                         
 :---------------------------------------:|:--------------------------------------------:|:---------------------------------------------:
 ![logistic ROC](https://user-images.githubusercontent.com/32847030/65394172-32c2d280-dd58-11e9-91b6-efea6251ff5b.JPG) | ![rm roc](https://user-images.githubusercontent.com/32847030/65394173-32c2d280-dd58-11e9-8cb0-a374add9b837.JPG) | ![xg roc](https://user-images.githubusercontent.com/32847030/65394260-4ae72180-dd59-11e9-9fd9-8b352924e132.JPG)
 
+**3 : Precision, Recall and F1 score**       
+
+Logistic Regression                      | RandomForest                                 | XGBoost
+:---------------------------------------:|:--------------------------------------------:|:---------------------------------------------:
+![logistic report](https://user-images.githubusercontent.com/32847030/65394296-ed070980-dd59-11e9-9656-8533a1565c04.JPG) | ![rm report](https://user-images.githubusercontent.com/32847030/65394297-ed9fa000-dd59-11e9-8dc7-d149ab64d3fd.JPG) | ![xg report](https://user-images.githubusercontent.com/32847030/65394298-ed9fa000-dd59-11e9-8437-09d02ed47b0c.JPG)
+
 
 
 
