@@ -35,16 +35,16 @@ Vxxx: Vesta engineered rich features, including ranking, counting, and other ent
 
 ## Modeling 
 
-**Down Sampling**\
+**1 : Down Sampling**\
 Down sampled the majority class to match with number of instances of minority class in order for model not to generalize towards majority class (non-fraudalent).
 
-**Feature selection and transformation**\
+**2 : Feature selection and transformation**\
 Converted the categorical variables into numeric using on hot encoding. In logistic regression l1 regularization is used for feature selection, random forest uses bootstraping to select subset of variables at a time and XGBoost minimizes error iteratively to build a strong classifier based on weak classifier. 
 
-**Parameter Tuining**\
+**3 : Parameter Tuining**\
 Due to the size of dataset and limited computation power, the parameter tuining for XGBoost model is done manually based on calculated guesses and community sggestions. With more computation power the parameter tuning can be done automatically.   
 
-**Model Selection**\
+**4 : Model Selection**\
 Implemented three different methods. (logistic vs RandomForest vs XGBoost)
 
 ## Results Interpretation
