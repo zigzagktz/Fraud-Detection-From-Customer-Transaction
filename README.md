@@ -7,7 +7,7 @@ Built a fraud detectiong model trained on 591k customer transactions
 
 ## Workflow
 
-            ![Data-page-001](https://user-images.githubusercontent.com/32847030/65382626-fd76a000-dcd7-11e9-943c-34b464cbf1db.jpg)
+![Data-page-001](https://user-images.githubusercontent.com/32847030/65382645-2434d680-dcd8-11e9-881b-352f3d5c1f00.jpg)
 
 
 ## Data Description
