@@ -1,5 +1,5 @@
 # Fraud Detection Using Customer Transaction Data
-Built a fraud detectiong model trained on 591k customer transactions
+Python, Scikit-learn, Machine Learning
 
 ## Problem Statement and challenges
 - This is a Fraud Detection algorithm which predicts the probability of online transactions being fraudalent and non-fraudalent.
