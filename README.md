@@ -33,7 +33,7 @@ D1-D15: timedelta, such as days between previous transaction, etc.\
 M1-M9: match, such as names on card and address, etc.\
 Vxxx: Vesta engineered rich features, including ranking, counting, and other entity relations.\
 
-## Modeling (logistic vs RandomForest vs XGBoost)
+## Modeling 
 
 **Down Sampling**\
 Down sampled the majority class to match with number of instances of minority class in order for model not to generalize towards majority class (non-fraudalent).
@@ -43,6 +43,9 @@ Converted the categorical variables into numeric using on hot encoding. In logis
 
 **Parameter Tuining**\
 Due to the size of dataset and limited computation power, the parameter tuining for XGBoost model is done manually based on calculated guesses and community sggestions. With more computation power the parameter tuning can be done automatically.   
+
+**Model Selection**\
+Implemented three different methods. (logistic vs RandomForest vs XGBoost)
 
 ## Results Interpretation
 **1 : Confusion Matrix and Accuracy**
