@@ -40,11 +40,14 @@ Logistic Regression                      | RandomForest                         
 ![logistic con_mat](https://user-images.githubusercontent.com/32847030/65394133-b92ae480-dd57-11e9-9faf-459f19a4b439.JPG) | ![rm con_mat](https://user-images.githubusercontent.com/32847030/65394134-b92ae480-dd57-11e9-9127-724b1eda8159.JPG) | ![xg con_mat](https://user-images.githubusercontent.com/32847030/65394255-402c8c80-dd59-11e9-9cbc-7a288cfd04fc.JPG)
 70.42% | 74.7% | 90.19%
 
+
 - Logistic regression has given more ***Flase positive*** than randomforest. Allowing more frauds to go undetected, hence less vigilent.
 - Randomforest has given more ***Flase negative*** than Logistic. Picking up many false alarms, hence reduced customer satisfaction.
 - XGB giving best accuracy.
                          
-                         
+              
+              
+              
 **2 : Area Under the Curve with ROC curve**       
 
 Logistic Regression                      | RandomForest                                 | XGBoost
@@ -53,11 +56,13 @@ Logistic Regression                      | RandomForest                         
 
 Why do we need this?
 > Because simple classification can only consider one therashold for classifying two classes. For example less than 50% class 1 and more than 50% class 2. However, ROC gives proper understanding of overall distribution of class probability. 
+> False Positive Rate: False Positive / (False Positive + True Negative) 
+> True Positive Rate: True Positive / (True Positive + False Negative)
 
-- False Positive Rate: False Positive / (False Positive + True Negative) 
-- True Positive Rate: True Positive / (True Positive + False Negative)
+The desired value of ROC curve is when it reach top left corner of the graph. Meaning XGB outperforms both logistic and randomforest
 
-The desired value of ROC curve is when it reach top left corner of the graph. 
+
+
 
 **3 : Precision, Recall and F1 score**       
 
